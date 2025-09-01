@@ -38,7 +38,7 @@ const MyFeed = () => {
       {initialAnime.length > 0 && (
         <>
           <h2 className="text-xl font-bold mt-6 mb-2">Anime to Pick From</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
             {initialAnime.map((anime) => (
               <div key={anime.mal_id} className="relative">
                 <AnimeCard anime={anime} />
@@ -71,7 +71,7 @@ const MyFeed = () => {
       {recommendations.length > 0 && (
         <>
           <h2 className="text-xl font-semibold mt-8 mb-2">Recommended For You</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {recommendations.map((anime) => (
               <AnimeCard key={anime.mal_id} anime={anime} />
             ))}
