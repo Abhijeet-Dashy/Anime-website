@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64" role="img" aria-label="Anime A logo">
+  <!-- Anime-style "A" logo
+       - Uses currentColor so you can recolor with CSS (e.g., style="color:#ff6ab3")
+       - Simple, rounded "A" with kawaii face inside the crossbar
+  -->
+  <defs>
+    <linearGradient id="grad" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="currentColor" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="currentColor" stop-opacity="0.6"/>
+    </linearGradient>
+  </defs>
+  <g stroke="none" fill="none">
+    <!-- Background circle badge (optional) -->
+    <circle cx="32" cy="32" r="30" fill="url(#grad)" opacity="0.08"/>
+    <!-- Big stylized "A" -->
+    <path d="M16 48 L32 12 L48 48 L40 48 L32 30 L24 48 Z" 
+          fill="currentColor" transform="translate(0,0)"/>
+    <!-- Cutout to create the hole / face area (using white to "punch" through) -->
+    <path d="M28 34 L36 34 L32 24 Z" fill="white" />
+    <!-- Face inside the crossbar (white circle with eyes and blush) -->
+    <ellipse cx="32" cy="36" rx="6.5" ry="4.5" fill="white" />
+    <!-- Eyes -->
+    <circle cx="29.2" cy="36.2" r="0.9" fill="currentColor"/>
+    <circle cx="34.8" cy="36.2" r="0.9" fill="currentColor"/>
+    <!-- Eye highlights -->
+    <circle cx="29" cy="35.6" r="0.28" fill="white" />
+    <circle cx="34.6" cy="35.6" r="0.28" fill="white" />
+    <!-- Mouth -->
+    <path d="M30.5 38.2 C31.5 39 32.5 39 33.5 38.2" stroke="currentColor" stroke-width="0.6" stroke-linecap="round" fill="none"/>
+    <!-- Blushes -->
+    <ellipse cx="26.6" cy="37.2" rx="1.1" ry="0.5" fill="currentColor" opacity="0.15"/>
+    <ellipse cx="37.4" cy="37.2" rx="1.1" ry="0.5" fill="currentColor" opacity="0.15"/>
+    <!-- Small sparkle to give anime feel -->
+    <path d="M49 16 l1.2-2.8 1.2 2.8 2.8 1.2 -2.8 1.2 -1.2 2.8 -1.2-2.8 -2.8-1.2 2.8-1.2Z" fill="currentColor" opacity="0.95"/>
+    <!-- Thin outline to define shape (subtle) -->
+    <path d="M16 48 L32 12 L48 48 L40 48 L32 30 L24 48 Z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round" opacity="0.15"/>
+  </g>
+  <title>Anime "A" Logo</title>
+  <desc>Simple stylized letter A with a kawaii face in the crossbar. Recolor by setting the SVG's color.</desc>
+</svg>

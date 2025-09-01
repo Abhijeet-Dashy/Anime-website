@@ -1,6 +1,4 @@
 const BASE_URL = 'https://api.jikan.moe/v4';
-
-// Fetch the top anime data once and store it.
 let topAnimeData = null;
 
 export async function fetchTopAnime() {
@@ -15,8 +13,6 @@ export async function fetchTopAnime() {
 }
 
 export async function fetchPopularCategories() {
-  // Now fetchPopularCategories can reuse the data from fetchTopAnime
-  // Simulating categories by fetching top anime—MyAnimeList does not provide category items.
   return fetchTopAnime();
 }
 
