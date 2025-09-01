@@ -14,7 +14,6 @@ const Home = () => {
   const [recommendations, setRecommendations] = useState([]);
 
   useEffect(() => {
-    // Delaying API calls slightly to avoid 429 error (Too Many Requests)
     const timers = [
       setTimeout(() => {
         fetchTopAnime().then(setTopRated);
@@ -37,7 +36,6 @@ const Home = () => {
     <div className="pb-24 px-4 bg-gray-100 min-h-screen">
       <Navbar />
       <Section title="Top Rated Anime" animeList={topRated} />
-      <Section title="Popular Categories" animeList={popularCategories} />
       <Section title="Recommendations for You" animeList={recommendations} />
       <BottomNav />
     </div>
